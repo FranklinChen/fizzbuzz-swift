@@ -17,13 +17,7 @@ struct FizzBuzz {
     
     static let buildRule: ((Int, String)) -> Rule = {
         n, word in
-        { i in
-            if i % n == 0 {
-                return word
-            } else {
-                return nil
-            }
-        }
+        { i in return (i % n == 0) ? word : nil }
     }
     
     static let addOption: (String?, String?) -> String? = {
