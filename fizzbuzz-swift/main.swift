@@ -8,5 +8,7 @@
 
 import Foundation
 
-println("Hello, World!")
-
+// TODO Why did compiler force label?
+for s in Driver.runToSeq(1, j: 100) {
+    println(s)
+}

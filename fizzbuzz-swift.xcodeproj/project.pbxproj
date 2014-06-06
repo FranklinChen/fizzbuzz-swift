@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		74025D731941EE3F00A523D4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74025D721941EE3F00A523D4 /* main.swift */; };
+		74025D8F1941F80600A523D4 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74025D8E1941F80600A523D4 /* Driver.swift */; };
+		74025D901941F80600A523D4 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74025D8E1941F80600A523D4 /* Driver.swift */; };
+		74025D921942026B00A523D4 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74025D911942026B00A523D4 /* Defaults.swift */; };
+		74025D931942026B00A523D4 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74025D911942026B00A523D4 /* Defaults.swift */; };
+		74025D951942074700A523D4 /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74025D941942074700A523D4 /* DriverTests.swift */; };
+		748BD0CC19421837004D7A6C /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748BD0CB19421837004D7A6C /* FizzBuzz.swift */; };
+		748BD0CD19421837004D7A6C /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748BD0CB19421837004D7A6C /* FizzBuzz.swift */; };
+		748BD0D019421864004D7A6C /* FizzBuzzPopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748BD0CE19421864004D7A6C /* FizzBuzzPopTests.swift */; };
+		748BD0D31942186E004D7A6C /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748BD0D11942186E004D7A6C /* FizzBuzzTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +34,25 @@
 /* Begin PBXFileReference section */
 		74025D6F1941EE3F00A523D4 /* fizzbuzz-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fizzbuzz-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74025D721941EE3F00A523D4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		74025D831941F59200A523D4 /* fizzbuzz-swift-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fizzbuzz-swift-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74025D861941F59200A523D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74025D8E1941F80600A523D4 /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		74025D911942026B00A523D4 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		74025D941942074700A523D4 /* DriverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverTests.swift; sourceTree = "<group>"; };
+		748BD0CB19421837004D7A6C /* FizzBuzz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
+		748BD0CE19421864004D7A6C /* FizzBuzzPopTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzPopTests.swift; sourceTree = "<group>"; };
+		748BD0D11942186E004D7A6C /* FizzBuzzTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		74025D6C1941EE3F00A523D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74025D801941F59200A523D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				74025D711941EE3F00A523D4 /* fizzbuzz-swift */,
+				74025D841941F59200A523D4 /* fizzbuzz-swift-test */,
 				74025D701941EE3F00A523D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				74025D6F1941EE3F00A523D4 /* fizzbuzz-swift */,
+				74025D831941F59200A523D4 /* fizzbuzz-swift-test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +83,31 @@
 		74025D711941EE3F00A523D4 /* fizzbuzz-swift */ = {
 			isa = PBXGroup;
 			children = (
+				748BD0CB19421837004D7A6C /* FizzBuzz.swift */,
 				74025D721941EE3F00A523D4 /* main.swift */,
+				74025D8E1941F80600A523D4 /* Driver.swift */,
+				74025D911942026B00A523D4 /* Defaults.swift */,
 			);
 			path = "fizzbuzz-swift";
+			sourceTree = "<group>";
+		};
+		74025D841941F59200A523D4 /* fizzbuzz-swift-test */ = {
+			isa = PBXGroup;
+			children = (
+				748BD0D11942186E004D7A6C /* FizzBuzzTests.swift */,
+				748BD0CE19421864004D7A6C /* FizzBuzzPopTests.swift */,
+				74025D941942074700A523D4 /* DriverTests.swift */,
+				74025D851941F59200A523D4 /* Supporting Files */,
+			);
+			path = "fizzbuzz-swift-test";
+			sourceTree = "<group>";
+		};
+		74025D851941F59200A523D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74025D861941F59200A523D4 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +130,23 @@
 			productReference = 74025D6F1941EE3F00A523D4 /* fizzbuzz-swift */;
 			productType = "com.apple.product-type.tool";
 		};
+		74025D821941F59200A523D4 /* fizzbuzz-swift-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74025D891941F59200A523D4 /* Build configuration list for PBXNativeTarget "fizzbuzz-swift-test" */;
+			buildPhases = (
+				74025D7F1941F59200A523D4 /* Sources */,
+				74025D801941F59200A523D4 /* Frameworks */,
+				74025D811941F59200A523D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fizzbuzz-swift-test";
+			productName = "fizzbuzz-swift-test";
+			productReference = 74025D831941F59200A523D4 /* fizzbuzz-swift-test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +157,9 @@
 				ORGANIZATIONNAME = "Franklin Chen";
 				TargetAttributes = {
 					74025D6E1941EE3F00A523D4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					74025D821941F59200A523D4 = {
 						CreatedOnToolsVersion = 6.0;
 					};
 				};
@@ -109,16 +177,43 @@
 			projectRoot = "";
 			targets = (
 				74025D6E1941EE3F00A523D4 /* fizzbuzz-swift */,
+				74025D821941F59200A523D4 /* fizzbuzz-swift-test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74025D811941F59200A523D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74025D6B1941EE3F00A523D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74025D8F1941F80600A523D4 /* Driver.swift in Sources */,
+				74025D921942026B00A523D4 /* Defaults.swift in Sources */,
 				74025D731941EE3F00A523D4 /* main.swift in Sources */,
+				748BD0CC19421837004D7A6C /* FizzBuzz.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74025D7F1941F59200A523D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748BD0CD19421837004D7A6C /* FizzBuzz.swift in Sources */,
+				748BD0D019421864004D7A6C /* FizzBuzzPopTests.swift in Sources */,
+				748BD0D31942186E004D7A6C /* FizzBuzzTests.swift in Sources */,
+				74025D931942026B00A523D4 /* Defaults.swift in Sources */,
+				74025D951942074700A523D4 /* DriverTests.swift in Sources */,
+				74025D901941F80600A523D4 /* Driver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +309,38 @@
 			};
 			name = Release;
 		};
+		74025D8A1941F59200A523D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "fizzbuzz-swift-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74025D8B1941F59200A523D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "fizzbuzz-swift-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -233,6 +360,16 @@
 				74025D781941EE3F00A523D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74025D891941F59200A523D4 /* Build configuration list for PBXNativeTarget "fizzbuzz-swift-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74025D8A1941F59200A523D4 /* Debug */,
+				74025D8B1941F59200A523D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
