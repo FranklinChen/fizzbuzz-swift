@@ -9,7 +9,7 @@
 struct FizzBuzz {
     typealias Evaluator = Int -> String
     
-    typealias Config = (Int, String)[]
+    typealias Config = [(Int, String)]
     
     typealias Compiler = Config -> Evaluator
     
@@ -36,7 +36,7 @@ struct FizzBuzz {
     
     static let compile: Compiler = { pairs in
         // Precompute, hence "compiler".
-        let rules: Rule[] = pairs.map(buildRule)
+        let rules: [Rule] = pairs.map(buildRule)
     
         // Return an Evaluator.
         return { i in
