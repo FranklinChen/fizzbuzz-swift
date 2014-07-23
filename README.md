@@ -12,7 +12,7 @@ This is a tested and runnable Swift version of my original Scala code for a talk
 
 You need to be running Mac OS X.
 
-[Install the latest Xcode 6 beta 3](http://developer.apple.com/swift/resources/) without monetary cost, but you have to register on Apple's Developer site.
+[Install the latest Xcode 6 beta](http://developer.apple.com/swift/resources/) without monetary cost, but you have to register on Apple's Developer site.
 
 ### Coding style
 
