@@ -15,7 +15,7 @@ class DriverTests: XCTestCase {
             "7", "8", "Fizz", "Buzz", "11", "Fizz",
             "13", "14", "FizzBuzz", "16"
         ]
-        // TODO Why label? Why XCTAssertEqual did not work?
-        XCTAssert(Driver.runToSeq(1, 16) == expected)
+        // TODO XCTAssertEqual does not work.
+        XCTAssert(Driver.runToSeq(1, j: 16) == expected)
     }
 }

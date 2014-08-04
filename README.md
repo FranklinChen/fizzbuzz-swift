@@ -22,10 +22,9 @@ For didactic purposes, to focus on functional programming, I presented code usin
 
 #### Compiler notes
 
-The Swift compiler is currently acting strangely. I encounter two behaviors that I consider bugs:
+The Swift compiler is currently acting strangely.
 
-- Complaining incorrectly about a non-exhaustive pattern match when in fact I am checking each of 4 cases of a pair of Booleans.
-- Requiring a label in a call of a function. No idea why.
+- It complains incorrectly about a non-exhaustive pattern match when in fact I am checking each of 4 cases of a pair of Booleans.
 
 #### Swift needs a property-based testing framework
 
