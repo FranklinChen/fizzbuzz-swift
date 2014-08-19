@@ -42,11 +42,7 @@ struct FizzBuzz {
         return { i in
             let wordOptions = rules.map { rule in rule(i) }
             let combinedOption = wordOptions.reduce(nil, addOption)
-            if let combined = combinedOption {
-                return combined
-            } else {
-                return String(i)
-            }
+            return combinedOption ?? String(i)
         }
     }
  }
