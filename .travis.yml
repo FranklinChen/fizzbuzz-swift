@@ -1,3 +1,3 @@
 language: objective-c
-xcode_project: fizzbuzz-swift.xcodeproj
-xcode_scheme: fizzbuzz-swift-test
+script:
+  - xctool -project fizzbuzz-swift.xcodeproj -scheme fizzbuzz-swift-test test
