@@ -25,7 +25,6 @@ struct Defaults {
         case (false, true):  return "Buzz"
         case (true,  true):  return "FizzBuzz"
         case (false, false): return String(i)
-        default: return "Compiler bug: complained Switch must be exhaustive" // TODO
         }
     }
 }

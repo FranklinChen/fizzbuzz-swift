@@ -41,7 +41,7 @@ struct FizzBuzz {
         // Return an Evaluator.
         return { i in
             let wordOptions = rules.map { rule in rule(i) }
-            let combinedOption = wordOptions.reduce(nil, addOption)
+            let combinedOption = wordOptions.reduce(nil, combine: addOption)
             return combinedOption ?? String(i)
         }
     }

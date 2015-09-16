@@ -1,3 +1,7 @@
 language: objective-c
+osx_image: xcode7
+xcode_project: fizzbuzz-swift.xcodeproj
+xcode_scheme: fizzbuzz-swift-test
 script:
-  - xctool -project fizzbuzz-swift.xcodeproj -scheme fizzbuzz-swift-test test
+  # xctool currently broken
+  - xcodebuild -project fizzbuzz-swift.xcodeproj -scheme fizzbuzz-swift-test test
