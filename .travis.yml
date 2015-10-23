@@ -1,9 +1,5 @@
+sudo: false
 language: objective-c
-osx_image: xcode7
+osx_image: xcode7.1
 xcode_project: fizzbuzz-swift.xcodeproj
 xcode_scheme: fizzbuzz-swift-test
-before_install:
-  - brew update
-  - brew outdated xctool || brew upgrade xctool
-script:
-  - xctool -project fizzbuzz-swift.xcodeproj -scheme fizzbuzz-swift-test test
