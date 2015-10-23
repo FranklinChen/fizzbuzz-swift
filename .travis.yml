@@ -3,3 +3,5 @@ language: objective-c
 osx_image: xcode7.1
 xcode_project: fizzbuzz-swift.xcodeproj
 xcode_scheme: fizzbuzz-swift-test
+# Removed "build test" from default
+script: xctool -project fizzbuzz-swift.xcodeproj -scheme fizzbuzz-swift-test test
