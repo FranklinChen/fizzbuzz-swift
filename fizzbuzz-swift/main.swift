@@ -10,5 +10,5 @@ import Foundation
 
 // Found the reason for the need for the label: Swift has Objective-C based notions of parameter names for methods.
 for s in Driver.runToSeq(1, j: 100) {
-    println(s)
+    print(s)
 }
